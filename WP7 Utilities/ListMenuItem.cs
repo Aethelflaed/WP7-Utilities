@@ -13,6 +13,7 @@ namespace WP7_Utilities
 	{
 		string Title { get; }
 		ICommand Command { get; }
+		string Background { get; }
 	}
 
 	/// <summary>
@@ -34,6 +35,14 @@ namespace WP7_Utilities
 		{
 			get { return _command; }
 			set { _command = value; }
+		}
+
+		private string _background;
+
+		public string Background
+		{
+			get { return _background; }
+			set { _background = value; }
 		}
 	}
 
@@ -60,6 +69,14 @@ namespace WP7_Utilities
 		public ICommand Command
 		{
 			get { return _command; }
+		}
+
+		private string _background;
+
+		public string Background
+		{
+			get { return _background; }
+			set { _background = value; }
 		}
 	}
 }
